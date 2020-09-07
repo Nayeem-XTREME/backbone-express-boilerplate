@@ -3,8 +3,8 @@
  */
 
 define([
-  'text!template/home.html'
-], function (HomeTemplate) {
+  'text!template/home.html', 'underscore'
+], function (HomeTemplate, _) {
   'use strict';
 
   var HomeView = Backbone.View.extend({

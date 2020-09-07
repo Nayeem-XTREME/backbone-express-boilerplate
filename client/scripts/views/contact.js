@@ -3,8 +3,8 @@
  */
 
 define([
-  'text!template/contact.html'
-], function (ContactTemplate) {
+  'text!template/contact.html', 'underscore'
+], function (ContactTemplate, _) {
   'use strict';
 
   var ContactView = Backbone.View.extend({

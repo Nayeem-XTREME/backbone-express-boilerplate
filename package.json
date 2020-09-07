@@ -13,7 +13,6 @@
     "pug": "latest",
     "serve-favicon": "latest"
   },
-
   "description": "Boilerplate project for node, express and backbone",
   "repository": {
     "type": "git",

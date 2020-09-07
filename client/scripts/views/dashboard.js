@@ -3,8 +3,8 @@
  */
 
 define([
-  'text!template/dashboard.html'
-], function (DashboardTemplate) {
+  'text!template/dashboard.html', 'underscore'
+], function (DashboardTemplate, _) {
   'use strict';
 
   var DashboardView = Backbone.View.extend({
