@@ -28,6 +28,6 @@ define([
         this.$el.html(this.template());
       }
     });
-    return FormView;
+    return Form;
   });
   

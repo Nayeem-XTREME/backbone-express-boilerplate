@@ -8,8 +8,8 @@ define([
   'views/home',
   'views/dashboard',
   'views/contact',
-  'views/formView'
-], function (UserCollection, HomeView, DashboardView, ContactView, formView) {
+  'views/form'
+], function (UserCollection, HomeView, DashboardView, ContactView, form) {
   'use strict';
 
   var AdminRouter = Backbone.Router.extend({
@@ -54,7 +54,7 @@ define([
     },
 
     form: function() {
-      this.changeView(new formView(), true);
+      this.changeView(new form(), true);
     }
   });
 

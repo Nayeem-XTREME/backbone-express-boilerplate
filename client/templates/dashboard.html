@@ -5,23 +5,29 @@
       <caption class="text-primary">USERS</caption>
       <thead>
       <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Name</th>
         <th>Email</th>
-        <th>City</th>
-        <th>Country</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Book</th>
+        <th>Author</th>
+        <th>Borrow Date</th>
+        <th>Return Date</th>
       </tr>
       </thead>
       <tbody>
-      <% _.each(users, function (user){%>
+      <% _.each(users, function (user) {%>
       <tr>
-        <td><%=user.firstname%></td>
-        <td><%=user.lastname%></td>
+        <td><%=user.name%></td>
         <td><%=user.email%></td>
-        <td><%=user.city%></td>
-        <td><%=user.country%></td>
+        <td><%=user.address%></td>
+        <td><%=user.mobile%></td>
+        <td><%=user.book%></td>
+        <td><%=user.author%></td>
+        <td><%=user.borrowDate%></td>
+        <td><%=user.returnDate%></td>
       </tr>
-      <%})%>
+      <%}) %>
       </tbody>
     </table>
   </div>

@@ -13,26 +13,38 @@ module.exports = function () {
       //fill with some dummy data
       //in real life you have to user db connection
       // and get the data
-      var users = [{
-        firstname: 'Sohel',
-        lastname: 'Rana',
-        email: 'sohel023010@gmail.com',
-        city: 'Dhaka',
-        country: 'Australia'
-
-      }, {
-        firstname: 'Mathew',
-        lastname: 'Hayden',
-        email: 'mathew.hayden@gmail.com',
-        city: 'Perth',
-        country: 'Autralia'
-      }, {
-        firstname: 'Bill',
-        lastname: 'Cosby',
-        email: 'bill.cosby@gmail.com',
-        city: 'Hollywood',
-        country: 'USA'
-      }];
+      var users = [
+        {
+          name: "Niaz Morshed Nayeem",
+          email: "nayeemxtreme@live.com",
+          address: "Gulshan 1, Dhaka",
+          mobile: "01913624522",
+          book: "A brief history of time",
+          author: "Stefen Hawkings",
+          borrowDate: "20 April 2020",
+          returnDate: "1 May 2020"
+        },
+        {
+          name: "Abdullah Mohammad Khan",
+          email: "akhan@gmail.com",
+          address: "Mymensingh",
+          mobile: "01913624522",
+          book: "Time Machine",
+          author: "H. G. Wells",
+          borrowDate: "22 April 2020",
+          returnDate: "10 May 2020"
+        },
+        {
+          name: "Abu Bakar Siddik",
+          email: "absiddik@live.com",
+          address: "Jatrabari, Dhaka",
+          mobile: "01913624522",
+          book: "War of the Worlds",
+          author: "H. G. Wells",
+          borrowDate: "5 March 2020",
+          returnDate: "30 March 2020"
+        }
+      ];
       callback(null, users);
     }
   }
