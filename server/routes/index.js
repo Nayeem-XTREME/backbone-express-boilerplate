@@ -2,6 +2,7 @@ var path = require('path');
 
 module.exports = function (app) {
   app.use('/users', require('./users'));
+  app.use('/register', require('./register'));
 
 
   //loading index.html for root

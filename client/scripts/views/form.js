@@ -2,8 +2,6 @@
  * Created by sohel on 3/30/15.
  */
 
-// let fs = require('fs');
-
 define([
     'text!template/form.html', 'underscore'
   ], function (FormTemplate, _) {
@@ -49,17 +47,10 @@ define([
 
         alert(JSON.stringify(data));
 
-        // let values = fs.readFileSync('./server/models/info.json').toString();
-        // let users = JSON.parse(values);
-        // users.push(data);
-
-        // fs.writeFileSync('./server/models/info.json', users);
 
         $('#myForm')[0].reset();
 
       }
-
-
 
     });
     return Form;
