@@ -32,6 +32,7 @@ define([
       },
 
       save: function (e) {
+
         e.preventDefault();
 
         let data = {
@@ -45,8 +46,9 @@ define([
           returnDate: $('#return').val()
         }
 
-        alert(JSON.stringify(data));
-
+        $.post('http://localhost:8000/register', data, function() {
+          alert("Data added!");
+        })
 
         $('#myForm')[0].reset();
 

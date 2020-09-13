@@ -20,10 +20,10 @@ router.post('/', (req, res) => {
 
     try {
 
-        var values = fs.readFileSync('./server/models/info.json').toString();
+        var values = fs.readFileSync('./server/db/info.json').toString();
         var users = JSON.parse(values);
         users.push(data);
-        fs.writeFileSync('./server/models/info.json', JSON.stringify(users));
+        fs.writeFileSync('./server/db/info.json', JSON.stringify(users));
 
         res.send("Data added!");
 

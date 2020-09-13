@@ -17,7 +17,7 @@ module.exports = function () {
       // and get the data
       try {
         
-        var values = fs.readFileSync('./server/models/info.json').toString();
+        var values = fs.readFileSync('./server/db/info.json').toString();
         var users = JSON.parse(values);
         callback(null, users); 
 
